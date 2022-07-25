@@ -1,55 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        nav{
-            background-color: yellow;
-            width: 100%;
-            display: flex;
-        }
-        nav .logo{
-            padding: 18px;
-        }
-        nav .logo a{
-            text-decoration: none;
-            color: black;
-            font-size: 20px;
-        }
-        nav ul{
-            list-style: none;
-            padding: 18px;
-        }
-        nav ul li{
-            display: inline;
-        }
-        nav ul li a{
-            text-decoration: none;
-            color: black;
-            padding: 30px;
-        }
-
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      nav {
+        background-color: yellow;
+        width: 100%;
+        display: flex;
+      }
+      nav .logo {
+        padding: 18px;
+      }
+      nav .logo a {
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+      }
+      nav ul {
+        list-style: none;
+        padding: 18px;
+      }
+      nav ul li {
+        display: inline;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: black;
+        padding: 30px;
+      }
+      nav .drop-cont{
+        position: absolute;
+        top: 20px;
+        left: 0;
+        background-color: yellow;
+        width: 100px;
+        display: none;
+      }
+      nav .drop-cont li{
+        display: block;
+        margin-top: 10px;
+        
+      }
+      nav .drop-cont li a{
+        margin: 0;
+        padding: 10px;
+        font-size: 18px;
+        
+      }
+      .dropdown{
+        position: relative;
+      }
+      nav .dropdown:hover .drop-cont{
+        display: block;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <nav>
-        <div class="logo">
-            <a href="#">Company logo</a>
-        </div>
-        <ul>
-            <li><a href="#">Home</a></li>
-             <li><a href="#">About us</a></li>
-              <li><a href="#">services</a></li>
-               <li><a href="#">contact us</a></li>
-        </ul>
+      <div class="logo">
+        <a href="#">Company logo</a>
+      </div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About us</a></li>
+        <li class="dropdown">
+          <a href="#">services</a>
+          <ul class="drop-cont">
+            <li><a href="#">link 1</a></li>
+            <li><a href="#">link 2</a></li>
+            <li><a href="#">link 3</a></li>
+            <li><a href="#">link 4</a></li>
+          </ul>
+        </li>
+        <li><a href="#">contact us</a></li>
+      </ul>
     </nav>
-</body>
+  </body>
 </html>
