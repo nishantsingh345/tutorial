@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .content {
+        display: flex;
+      }
+      .card {
+        width: 50%;
+      }
+      h1 {
+        text-align: center;
+      }
+      img {
+        width: 100%;
+        height: 350px;
+      }
+      @media screen and (max-width: 768px) {
+        .content {
+          flex-direction: column-reverse;
+        }
+        .card {
+          width: 100%;
+        }
+      }
+      @media screen and (max-width: 425px) {
+        .content {
+          flex-direction: column-reverse;
+          background-color: yellow;
+          color: white;
+        }
+        .card {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <div class="card">
+        <h1>ABOUT US</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, ullam
+          quo. Odio dolorum placeat adipisci eius! Cum ullam eveniet labore
+          porro magni eaque tempora? Vel cupiditate voluptatem cumque, at rem
+          saepe modi unde, odio, dicta veniam nulla inventore ut repudiandae
+          neque sunt optio repellendus ipsam possimus a? Reprehenderit harum,
+          deserunt impedit vitae nisi, numquam aliquam optio praesentium, id
+          similique quia. Vitae deserunt porro tempore consequatur dolorem
+          perferendis. Error blanditiis cupiditate vitae delectus eos aspernatur
+          deserunt culpa ratione eaque esse quod, eum iusto numquam perspiciatis
+          consectetur totam dolorum voluptate, officia natus dicta. Quo cum
+          repellendus eligendi, illum quibusdam, reiciendis, necessitatibus sint
+          odit et id ducimus nihil accusamus animi. Numquam praesentium sit
+          provident eum, culpa laboriosam reprehenderit molestias vitae adipisci
+          perferendis vel possimus inventore soluta sunt delectus veniam
+          distinctio eveniet totam assumenda aliquam beatae, cum dolorem
+          consequatur ea? Iure quia earum voluptate neque, dicta perspiciatis
+          unde sint, vero optio tenetur atque. Corporis quas debitis, eos
+          excepturi minus accusamus doloribus libero porro temporibus vero quis
+          sequi at, deserunt mollitia natus ad asperiores, distinctio quae ipsum
+          sapiente sed reprehenderit. Amet maxime ad harum similique, vitae
+          inventore! Nostrum laborum totam earum provident aspernatur
+          voluptatibus debitis, consequatur corporis architecto quasi error in
+          animi quidem recusandae at?
+        </p>
+      </div>
+      <div class="card">
+        <img
+          src="https://images.unsplash.com/photo-1553095066-5014bc7b7f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2FsbCUyMGJhY2tncm91bmR8ZW58MHx8MHx8&w=1000&q=80"
+          alt=""
+        />
+      </div>
+    </div>
+  </body>
+</html>
